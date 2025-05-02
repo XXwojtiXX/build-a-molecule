@@ -28,60 +28,17 @@ class PlaygroundModel extends BAMModel {
 
     // general kit
     kitCollection.addKit( new Kit( collectionLayout, [
-      BAMBucket.createAutoSized( this.stepEmitter, Element.H, 13 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.O, 3 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.C, 3 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.N, 3 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.Cl, 2 )
-    ] ) );
-
-    // organics kit
-    kitCollection.addKit( new Kit( collectionLayout, [
-      new BAMBucket( BUCKET_DIMENSIONS, this.stepEmitter, Element.H, 21 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.O, 4 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.C, 4 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.N, 4 )
-    ] ) );
-
-    // chlorine / fluorine
-    kitCollection.addKit( new Kit( collectionLayout, [
-      new BAMBucket( BUCKET_DIMENSIONS, this.stepEmitter, Element.H, 21 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.C, 4 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.H, 30 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.O, 6 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.C, 6 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.N, 5 ),
       BAMBucket.createAutoSized( this.stepEmitter, Element.Cl, 4 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.F, 4 )
-    ] ) );
-
-    // boron / silicon
-    kitCollection.addKit( new Kit( collectionLayout, [
-      new BAMBucket( BUCKET_DIMENSIONS, this.stepEmitter, Element.H, 21 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.C, 3 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.B, 2 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.Si, 2 )
-    ] ) );
-
-    // sulphur / oxygen
-    kitCollection.addKit( new Kit( collectionLayout, [
-      new BAMBucket( BUCKET_DIMENSIONS, this.stepEmitter, Element.H, 21 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.B, 1 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.S, 2 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.Si, 1 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.P, 1 )
-    ] ) );
-
-    // phosphorus
-    kitCollection.addKit( new Kit( collectionLayout, [
-      new BAMBucket( BUCKET_DIMENSIONS, this.stepEmitter, Element.H, 21 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.C, 4 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.O, 2 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.P, 2 )
-    ] ) );
-
-    // bromine
-    kitCollection.addKit( new Kit( collectionLayout, [
-      new BAMBucket( BUCKET_DIMENSIONS, this.stepEmitter, Element.H, 21 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.Br, 2 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.N, 3 ),
-      BAMBucket.createAutoSized( this.stepEmitter, Element.C, 3 )
+      BAMBucket.createAutoSized( this.stepEmitter, Element.F, 4 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.B, 3 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.Si, 3 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.S, 3 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.P, 3 ),
+      BAMBucket.createAutoSized( this.stepEmitter, Element.Br, 2 )
     ] ) );
   }
 }
